@@ -1,0 +1,205 @@
+*{
+	padding:0px;
+	margin:0px;
+	}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+	src: url("../font/SourceHanSansCN-Light.otf");
+	font-family: '思源黑体Light';
+} /*导入本地字体*/
+.dnf_detailed{
+    width: 1900px;
+    height: 1068px;
+	font-family: "思源黑体Light";
+    background: url("../img/beijing.jpg") no-repeat;
+}
+.all{
+    width:1139px;
+    border: #CCC 1px solid;
+    height: 960px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding-top: 20px;
+	padding-right: 20px;
+    padding-left: 20px;
+    background:rgba(255,255,255,0.9);
+}
+/*顶部CSS*/
+.top{
+	width: 1900px;
+	height: 84px;
+	background: #1E222B;
+}
+.top ul{
+	width: 100%;
+	list-style:none;
+}
+.top_left{
+	margin-left: 200px;
+	float: left;
+}
+.all_title{
+	width: 50%;
+	margin: 0px 650px;
+}
+.top_title{
+	width: 152px;
+	float: left;
+	height: 84px;
+	color: #FFF;
+	line-height: 84px;
+	font-size: 25px;
+	font-weight: 900;
+}
+.top_title div{
+	height: 82px;
+	width: 125px;
+	text-align: center;
+}
+.top_right{
+	width: 247px;
+	height: 84px;
+	float: right;
+	background: url("../img/DNF_wangzhan.png") no-repeat;
+}
+.top_title:hover{
+	-webkit-transition: 0.3s;
+}
+.top_title div:hover{
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	background-color: #262C40;
+	border-bottom: #E5493B 3px solid;
+}
+/*顶部CSS*/
+.textIndent{
+	text-indent:2em;
+	}
+.zi_top h1{
+    color: #333;
+}
+.zi_top img{
+	float:left;
+	transition:0.25s;
+	-webkit-transition: 0.25s;
+	}
+.zi_top img:hover{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+}
+.zi_top h1 span{
+    font-size: 15px;
+}
+.title_bottom_p{
+	height: 110px;
+	line-height: 110px;
+    font-size: 15px;
+}
+.title_bottom{
+    color: #579be0;
+}
+.array_fram1{
+	margin: 30px 0px 0px  30px;
+	line-height: 25px;
+	float:left;
+	}
+.array_fram2{
+	line-height: 25px;
+	margin-top: 30px;
+	float:left;
+	}
+table{ border-collapse:collapse } 
+.DNF_name{
+	color:#666;
+	}
+tr{
+	width:100px;
+	height:22px;
+	border-bottom:1px #999 dashed;
+	}
+td{
+	padding-left:50px;
+	}
+.array_fram2 .DNF_name{
+	padding-left:170px;
+	}
+
+.main{
+	width:1139px;
+	height: auto;
+	margin-top: 20px;
+	display: inline-block;
+}
+.main_beijing{
+	text-indent: 2em;
+	padding: 10px 0px 0px 15px;
+	line-height: 35px;
+}
+/*底部版权&联系*/
+.bottom{
+	width: 100%;
+	height: 192px;
+	border-top: #3C3A3E 12px solid;
+	background: #FFF;
+	font-size: 18px;
+	color: #000;
+	font-family:"微软雅黑";
+}
+.bottom ul{
+	width:450px;
+	height: 100px;
+	margin: 35px auto;
+	list-style: none;
+	position: relative;
+}
+.bottom ul li{
+	float: left;
+	margin-top: 2px;
+}
+.wb_ico{
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	margin-top: 20px;
+	color: #ffffff;
+	background-color: #E5493B;
+	border-radius: 10px;
+	box-shadow: 10px 3px 20px #CCC;
+}
+.tx_ico{
+	width: 100px;
+	height: 100px;
+	margin-left: 250px;
+	color: #ffffff;
+	background-color: #E5493B;
+	border-radius: 10px;
+	box-shadow: 10px 3px 20px #CCC;
+}
+.tx_ico i{
+	padding-left: 8px;
+}
+.copyright{
+	color: #888888;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	padding-left: 75px;
+}
+.wb_ico:hover,.tx_ico:hover{
+	transition: 0.6s;
+	background-color:#488BC7;
+}
+.dnf_jianjie{
+	color: #E5493B;
+}
+.wb_ico p,.tx_ico p{
+	color: #1E222B;
+	font-size: 25px;
+	padding-top: 10px;
+}
+a{
+	text-decoration:none;
+}
+a img{border:0;}

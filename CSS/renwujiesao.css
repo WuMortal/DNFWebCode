@@ -1,0 +1,158 @@
+*{padding: 0;margin: 0;}
+body{
+    position: relative;
+}
+.all{
+    width: 1900px;
+    margin: 0px auto;
+}
+.top{
+    width: 1900px;
+    height: 84px;
+    background: #000;
+}
+.top ul{
+    width: 100%;
+    list-style:none;
+}
+.top_left{
+    margin-left: 200px;
+    float: left;
+}
+.all_title{
+    width: 50%;
+    margin: 0px 650px;
+}
+.top_title{
+    float: left;
+    height: 84px;
+    color: #FFF;
+    line-height: 84px;
+    padding-left: 50px;
+    font-size: 25px;
+    font-weight: 900;
+}
+.top_right{
+    width: 247px;
+    height: 84px;
+    float: right;
+    background: url("../img/DNF_wangzhan.png") no-repeat;
+}
+.top_title:hover{
+    -webkit-transition: 0.3s;
+    color: #E5493B;
+    text-decoration: underline;
+}
+.main{
+    width: 1900px;
+    height: 1946px;
+    background: #488BC7;
+    background: url("../img/main_top.png") no-repeat;
+}
+.bottom{
+    width: 100%;
+    height: 192px;
+    border-top: #3C3A3E 12px solid;
+    background: #FFF;
+}
+.bottom ul{
+    width:450px;
+    height: 100px;
+    margin: 35px auto;
+    list-style: none;
+    position: relative;
+}
+.bottom ul li{
+    float: left;
+    margin-top: 2px;
+}
+.wb_ico{
+    width: 100px;
+    height: 100px;
+    border-radius: 14px;
+    box-shadow: 5px 5px 5px #888888;
+    background: url("../img/bot_ioc.png") no-repeat 0px 0px;
+}
+.tx_ico{
+    width: 100px;
+    height: 100px;
+    margin-left: 250px;
+    border-radius: 13px;
+    box-shadow: 5px 5px 5px #888888;
+    background: url("../img/bot_ioc.png") no-repeat -100px 0px;
+}
+.copyright{
+    color: #888888;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    padding-left: 75px;
+}
+.wb_ico:hover{
+    transition: 0.6s;
+    background: url("../img/bot_ioc2.png") no-repeat 0px 0px; ;
+}
+.tx_ico:hover{
+    transition: 0.6s;
+    background: url("../img/bot_ioc2.png") no-repeat -100px 0px; ;
+}
+.dnf_jianjie{
+    color: #E5493B;;
+}
+.st{
+    position:fixed;
+    left: 95%;
+    top: 650px;
+}
+.st-1,.st-2,.st-3{
+    width: 72px;
+    height: 73px;
+    margin-top: 2px;
+}
+.st-1{
+    background: #6da9de;
+}
+.st-2{
+    background: #78c340;
+}
+.st-3{
+    background: #666666;
+}
+.st-1:hover{
+    background: #488BC7;
+}
+.st-2:hover{
+    background: #58A81C;
+}
+.st-1:hover div{
+    width: 160px;
+    height: 160px;
+    top: 0px;
+    left: -160px;
+    position: absolute;
+    margin-top: 2px;
+    background: url("../img/qq_ma.png") no-repeat;
+}
+.st-2:hover div{
+    width: 160px;
+    height: 160px;
+    top: 73px;
+    left: -160px;
+    position: absolute;
+    background: url("../img/wx_ma.jpg") no-repeat;
+}
+.st-3:hover div{
+    transition: 0.6s;
+    height: 73px;
+    width: 100px;
+    background: #666666;
+    position: absolute;
+    left:-100px;
+    top: 152px;
+}
+.st-3:hover div:after{
+    display: block;
+    content: "回到顶部";
+    font-size: 22px;
+    color: #FFF;
+    padding:25px 0 0 10px;
+}

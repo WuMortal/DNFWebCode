@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="CSS/index_style.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/font-awesome-4.7.0/css/font-awesome.min.css"/>
+    <script type="text/javascript" src="JS/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="JS/donghua.js"></script>
+    <script type="text/javascript" src="JS/lunbo_demo.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>DNF游戏介绍</title>
+</head>
+<body>
+    <div class="all">
+        <div class="top">       <!--顶部-->
+            <ul>
+                <li><a id="get_top"></a></li>      <!--回到顶部的锚点-->
+                <li class="top_left"><img src="img/dnf-logo1.png" alt="DNF_LOGO" /></li>    <!--DNF左边LOGO-->
+                <div class="all_title">
+                    <a href="index.html"><li class="top_title"><div>GO&nbsp;首页</div></li></a>
+                    <a href="Subhtml/employment.html" target="_blank"> <li class="top_title"><div>职业设定</div></li></a>
+                    <a href="Subhtml/xiangxi.html" target="_blank"><li class="top_title"><div>游戏介绍</div></li></a>
+                    <a href="#get_Character" id="top_get_Character"> <li class="top_title"><div>角色背景</div></li></a>
+                    <a href="#get_bottom" id="top_get_bottom"> <li class="top_title"><div>联系本人</div></li></a>
+                </div>
+                <a href="http://dnf.qq.com/main.shtml " target="_blank"><li class="top_right"></li></a>       <!--进去DNF官网-->
+            </ul>
+        </div>  <!--顶部-->
+        <div class="main">
+            <img src="img/Voidbeijing.jpg" alt="加载失败" width="1900" height="760" class="fugai">
+            <div class="main_video">
+                <div class="video-preview">
+                    <video width="1920" height="1080" class="video-preview" autoplay="autoplay" loop="loop" id="vbanner">
+                        <span>浏览器不支持</span>
+                        <source src="video/dnf.mp4" type="video/mp4" id="banner_mp4">
+                    </video>
+                </div>
+                <div class="dianImg"></div>
+                <!--视频上字体和按钮-->
+                <div class="welcom">
+                    <img src="img/welcome.png" width="728" height="430"/>
+                </div>
+                <div class="all_video">
+                    <a href="http://dnf.qq.com/v/" TARGET="_blank">更多精彩视频</a>
+                </div>
+                <!--视频上字体和按钮-->
+            </div>   <!--视频和其上部-->
+            <a id="get_Gametese"></a>   <!--游戏特色锚点-->
+            <div class="Game_teseAndlunbo">
+                <div class="lunboImg">
+                    <div class="pre">
+                        <a href="#pre"><img src="img/lunbo/prev.png" width="42" height="50" alt="加载失败" /></a>
+                    </div>
+                    <div class="next">
+                        <a href="#next"><img src="img/lunbo/next.png" width="42" height="50" alt="加载失败" /></a>
+                    </div>
+                    <ul>
+                        <a href="#aa"><li class="active"><img src="img/lunbo/lunbo1.png" alt="图片出错" id="img"/></li></a>
+                        <a href="#aa"><li><img src="img/lunbo/lunbo2.png" alt="图片出错"/></li></a>
+                        <a href="#aa"><li><img src="img/lunbo/lunbo3.png" alt="图片出错"/></li></a>
+                        <a href="#aa"><li><img src="img/lunbo/lunbo4.png" alt="图片出错"/></li></a>
+                        <a href="#aa"><li><img src="img/lunbo/lunbo5.png" alt="图片出错"/></li></a>
+                    </ul>
+                    <!--<div class="click">
+                        <div>
+                            <a href="#" class="active1">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                        </div>
+                    </div>-->
+                </div>      <!--图片轮播-->
+                <div class="Game_tese">
+                    <div class="Game_teseTitle">
+                        <h1 align="center">游戏介绍</h1>
+                    </div>
+                    <div class="Game_teseJiesao">
+                        <img src="img/main_title.png" width="900" height="359">
+                        <div class="text">
+                            <p class="text1">《地下城与勇士》</p>
+                            <p class="text2">是一款韩国网络游戏公司NEOPLE开发的免费角色扮演2D游戏，由三星电子发行，并于2005年8月在韩国正式发布。中国则由腾讯游戏代理发行。该游戏是一款2D卷轴式横版格斗过关网络游戏，大量继承了众多家用机、街机2D格斗游戏的特色。以任务引导角色成长为中心，结合副本、PVP、PVE为辅，与其他网络游戏同样具有装备与等级的改变，并拥有共500多种装备道具。</p>
+                            <a href="Subhtml/xiangxi.html" target="_blank" class="xiangxi">详情&gt;&gt;</a>
+                        </div>
+                    </div>
+                </div>  <!--文字介绍-->
+            </div>  <!--图片轮播-->
+            <div class="character"><!--角色介绍-->
+                <a id="get_Character"></a>
+                <div class="characterAndText">   <!--角色图片和文字介绍-->
+                    <div class="character_img" >
+                        <img src="img/Character_img/zhuanzhi_before/0.png" alt="图片加载失败" id="getcharacter_img"/>
+                    </div>
+                    <div class="character_text">
+                        <h1 id="characterName">鬼剑士</h1>
+                        <p id="characterJieshao">大多数鬼剑士是一手拿刀一手拿盾，在阿拉德国家，长久以来一直也是这种方式。但他们，两手只拿着一种武器。
+
+                            也许是因为他们扭曲的左臂。用这只黑色扭曲的鬼手来持刀或盾牌有很多不便。加上他们的左手手臂上还要缠绕着压制鬼神所用的铁丝，所以他们选择的战斗方式也许是很自然的。
+                            称为“鬼手”的身体变形是在50年前阿拉德大陆开始的。
+
+                            经过一些学者、鬼剑士们的研究发现，他们的病状并非是遗传或地域性的。无论何人-包括你-在人生的任何时期，一只手都可能会成为黑色变形的鬼手。他们都有查看鬼神的特异功能。
+
+                            如同医生以治疗范围的不同分为很多科目，鬼剑士们生活的方式也有所不同。
+
+                            他们与命运抗争、与鬼神抗争，人们将雪兰、巴恩一样，对自己持有的武器使用得淋漓尽致的鬼剑士称为剑魂。
+
+                            相反一些鬼剑士向鬼神借取力量，揭开了手臂中的铁丝，人们将这些鬼剑士称为鬼泣。
+
+                            有一小部分鬼剑士得了卡赞综合病症，一般人得卡赞综合病症的几率比较小，鬼剑士得病率比一般人高出100倍以上。这与他们黑暗生活方式有关。人们将这些鬼剑士称为狂战士。
+                        </p>
+                        <h3><span id="characterJineng">鬼剑士</span>通用技能展示：</h3>
+                        <ul>
+                            <li><img src="img/Character_img/jineng/0/0.jpg" alt="暂无图片" id="characterJinengImg1"/></li>
+                            <li><img src="img/Character_img/jineng/0/1.jpg" alt="暂无图片" id="characterJinengImg2"/></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="character_avatar">  <!--人物头像-->
+                    <div class="character_kaung">
+                        <ul class="character_avatarArray1">
+                            <a href="#guijainshi"><li id="character_touxiang1" onclick="genhuanimg('character_touxiang1')"></li></a>
+                            <a href="#nvguijainshi"><li id="character_touxiang2" onclick="genhuanimg('character_touxiang2')"></li></a>
+                            <a href="#nangedou"><li id="character_touxiang3" onclick="genhuanimg('character_touxiang3')"></li></a>
+                            <a href="#nvgedou"><li id="character_touxiang4" onclick="genhuanimg('character_touxiang4')"></li></a>
+                            <a href="#nanqiangshou"><li id="character_touxiang5" onclick="genhuanimg('character_touxiang5')"></li></a>
+                            <a href="#nvqiangshou"><li id="character_touxiang6" onclick="genhuanimg('character_touxiang6')"></li></a>
+                            <a href="#nanfashi"><li id="character_touxiang7" onclick="genhuanimg('character_touxiang7')"></li></a>
+                            <a href="#nfashi"><li id="character_touxiang8" onclick="genhuanimg('character_touxiang8')"></li></a>
+                        </ul>
+                        <ul class="character_avatarArray2">
+                            <a href="#anyeshizhe"><li id="character_touxiang9" onclick="genhuanimg('character_touxiang9')"></li></a>
+                            <a href="#shengzhizhe"><li id="character_touxiang10" onclick="genhuanimg('character_touxiang10')"></li></a>
+                            <a href="#heianwushi"><li id="character_touxiang11" onclick="genhuanimg('character_touxiang11')"></li></a>
+                            <a href="#dizaozhe"><li id="character_touxiang12" onclick="genhuanimg('character_touxiang12')"></li></a>
+                            <a href="#shouhuzhe"><li id="character_touxiang13" onclick="genhuanimg('character_touxiang13')"></li></a>
+                            <a href="#moqiangshi"><li id="character_touxiang14" onclick="genhuanimg('character_touxiang14')"></li></a>
+                        </ul>
+                    </div>
+                    <script type="text/javascript" src="JS/characterAvatar.js"></script>
+                </div>
+            </div>      <!--角色介绍-->
+            <div class="wallpaper">     <!--wallpaper壁纸-->
+                <h1 align="center">精美壁纸</h1>
+                <ul class="wallpaper1">
+                    <a href="img/lunbo/beijing/0.png" target="_blank"><li><img src="img/lunbo/beijing/0.png" /></li></a>
+                    <a href="img/lunbo/beijing/1.png" target="_blank"><li><img src="img/lunbo/beijing/1.png" /></li></a>
+                    <a href="img/lunbo/beijing/2.png" target="_blank"><li><img src="img/lunbo/beijing/2.png" /></li></a>
+                    <a href="img/lunbo/beijing/3.png" target="_blank"><li><img src="img/lunbo/beijing/3.png" /></li></a>
+                    <a href="img/lunbo/beijing/4.png" target="_blank"><li><img src="img/lunbo/beijing/4.png" /></li></a>
+                </ul>
+                <ul class="wallpaper2">
+                    <a href="img/lunbo/beijing/5.png" target="_blank"><li><img src="img/lunbo/beijing/5.png" /></li></a>
+                    <a href="img/lunbo/beijing/6.png" target="_blank"><li><img src="img/lunbo/beijing/6.png" /></li></a>
+                    <a href="img/lunbo/beijing/7.png" target="_blank"><li><img src="img/lunbo/beijing/7.png" /></li></a>
+                    <a href="img/lunbo/beijing/8.png" target="_blank"><li><img src="img/lunbo/beijing/8.png" /></li></a>
+                    <a href="img/lunbo/beijing/9.png" target="_blank"><li><img src="img/lunbo/beijing/9.png" /></li></a>
+                </ul>
+                <a href="http://dnf.qq.com/web2015/pic.shtml" target="_blank" class="gengduoImgBut">点击查看更多</a>
+            </div>   <!--wallpaper壁纸-->
+        </div> <!--内容-->
+        <div class="bottom" id="get_bottom">
+            <ul>
+                <a target="blank" class="btn btn-lg" href="http://weibo.com/3940231278"><li class="wb_ico"><i class="fa fa-weibo fa-5x" aria-hidden="true"></i><P>关注微博</P></li></a>    <!--关注微博-->
+                <a target="blank" class="btn btn-lg" href="http://t.qq.com/wu1170621609"><li class="tx_ico"><i class="fa fa-tencent-weibo fa-5x" aria-hidden="true"></i><p>腾讯微博</p></li></a>   <!--关注腾讯微博-->
+                <!--版权信息-->
+            </ul>
+            <p align="center">Copyright &nbsp;&copy;&nbsp;2016-&nbsp;<span class="dnf_jianjie">DNF介绍</span>，软件1602吴猛-版权所有</p>
+        </div>  <!--尾部-->
+        <div class="st">        <!--导航栏-->
+            <div class="st-1">
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1170621609&amp;site=qq&amp;menu=yes">
+                    <i class="fa fa-qq fa-2x" aria-hidden="true"></i>
+                    <p>联系QQ</p>
+                </a>
+                <div></div>
+            </div>      <!--导航图片一-->
+            <div class="st-2">
+                <a href="#wx">
+                    <i class="fa fa-weixin fa-2x" aria-hidden="true"></i>
+                    <p>关注微信</p>
+                </a>
+                <div></div>
+            </div>      <!--导航图片二-->
+            <div class="st-3">
+                <a href="#get_top" id="st_get_top"><i class="fa fa-chevron-up fa-3x" aria-hidden="true"></i></a>
+                <div></div>
+            </div>      <!--导航图片三-->
+        </div>   <!--导航栏-->
+    </div>
+</body>
+</html>

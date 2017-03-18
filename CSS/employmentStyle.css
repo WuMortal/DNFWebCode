@@ -1,0 +1,266 @@
+/*
+2016-12-18
+'职业设定'的CSS
+*/
+*{padding: 0px;margin: 0px;}
+.all{
+    width: 1900px;
+    height: 940px;
+    margin: 0px auto;
+    background: url("../img/web2beijing.png") no-repeat;
+}
+/*顶部CSS*/
+.top{
+    width: 1900px;
+    height: 84px;
+    background: #172C3D;
+}
+.top ul{
+    width: 100%;
+    list-style:none;
+}
+.top_left{
+    position: relative;
+    z-index: 10;
+    margin-left: 200px;
+    float: left;
+}
+.all_title{
+    width: 50%;
+    margin: 0px 650px;
+}
+.top_title{
+    width: 152px;
+    float: left;
+    height: 84px;
+    color: #FFF;
+    line-height: 84px;
+    font-size: 25px;
+    font-weight: 900;
+}
+.top_title div{
+    height: 82px;
+    width: 125px;
+    text-align: center;
+}
+.top_right{
+    width: 247px;
+    height: 84px;
+    float: right;
+    background: url("../img/DNF_wangzhan.png") no-repeat;
+}
+.top_title:hover{
+    -webkit-transition: 0.3s;
+}
+.top_title div:hover{
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    background-color:#264861;
+    border-bottom: #E5493B 3px solid;
+}
+/*顶部CSS*/
+.main{
+    width: 1900px;
+    height: 856px;
+    position: relative;
+}
+.employmentStyleIco{
+    width: 309px;
+    height:856px;
+}
+.employmentStyleIco ul{
+    height: 760px;
+    list-style: none;
+    position: absolute;
+
+}
+.employmentStyleIco ul li {
+    width: 309px;
+    height: 95px;
+    color:#FFFFFF;
+    font-size: 30px;
+    line-height: 47.5px;
+    font-weight: bold;
+    background:#547586;
+    position: relative;
+}
+#changeLiColor0{
+    background:#70969F;
+}
+#mingchen1,#mingchen2,#mingchen3,#mingchen4,#mingchen5,#mingchen6,#mingchen7,#mingchen8{
+    width: 188px;
+    height: 46px;
+    display: block;
+    position: absolute;
+    top:24.5px;
+    padding-left: 90px;
+    margin-left: 40px;
+}
+.employmentStyleIco ul li #mingchen1{
+    background: url("../img/mingcheng/0.png") no-repeat;
+}
+.employmentStyleIco ul li #mingchen2{
+    background: url("../img/mingcheng/1.png") no-repeat;
+}
+.employmentStyleIco ul li #mingchen3{
+    background: url("../img/mingcheng/2.png") no-repeat;
+}
+.employmentStyleIco ul li #mingchen4{
+    background: url("../img/mingcheng/3.png") no-repeat;
+}
+.employmentStyleIco ul li #mingchen5{
+    background: url("../img/mingcheng/4.png") no-repeat;
+}
+.employmentStyleIco ul li #mingchen6{
+    background: url("../img/mingcheng/6.png") no-repeat;
+}
+.employmentStyleIco ul li #mingchen7{
+    background: url("../img/mingcheng/8.png") no-repeat;
+}
+.employmentStyleIco ul li #mingchen8{
+    background: url("../img/mingcheng/9.png") no-repeat;
+}
+.zhiyeIco{
+    width: auto;
+    height: 96px;
+    color: #ffffff;
+    background-color: #264861;
+}
+.zhiyeIco span{
+    font-size: 40px;
+    font-family: "宋体";
+    font-weight:bold;
+    margin-left: 135px;
+}
+.icon{
+    position: absolute;
+    top: 0px;
+    left: 2px;
+    color: #ffffff;
+    font-size: 7em;
+}
+.all_left_characterJieshao{
+    position: absolute;
+    color: #FFFFFF;
+    top: 0px;
+    left: 310px;
+    overflow: hidden;
+    width: 1590px;
+    height: 856px;
+}
+#left_characterJieshao{
+    height: 856px;
+    position: absolute;
+    color: #FFFFFF;
+    top: 0px;
+    width: 1610px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color:rgba(103,131,134,0.8);
+}
+.rightJiNeng{
+    position: absolute;
+    left: 1084px;
+    top: 0px;
+}
+.rightJiNeng ul{
+    list-style: none;
+}
+.rightJiNeng ul li{
+    width: 90%;
+    height: auto;
+    border-bottom: 1px solid #2F2F2F;
+    margin: 0 auto;
+    padding-top: 22px;
+    padding-bottom: 15px;
+}
+.rightJiNeng ul li h1{
+    height: 32px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.rightJiNeng ul li h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+.rightJiNeng ul li p{
+    height: 30px;
+    line-height: 30px;
+    color: #BBBBBB;
+    font-size: 18px;
+}
+#JiNeng1,#JiNeng2,#JiNeng3,#JiNeng4{
+    height: 440px;
+    width: 510px;
+    margin-bottom:3px;
+    background-color: rgba(0,0,0,0.8);
+}
+/*底部版权&联系*/
+.bottom{
+    width: 100%;
+    height: 192px;
+    border-top: #3C3A3E 12px solid;
+    background: #FFF;
+    font-size: 18px;
+    color: #000;
+    font-family:"微软雅黑";
+}
+.bottom ul{
+    width:450px;
+    height: 100px;
+    margin: 35px auto;
+    list-style: none;
+    position: relative;
+}
+.bottom ul li{
+    float: left;
+    margin-top: 2px;
+}
+.wb_ico{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #E5493B;
+    border-radius: 10px;
+    box-shadow: 10px 3px 20px #CCC;
+}
+.tx_ico{
+    width: 100px;
+    height: 100px;
+    margin-left: 250px;
+    color: #ffffff;
+    background-color: #E5493B;
+    border-radius: 10px;
+    box-shadow: 10px 3px 20px #CCC;
+}
+.tx_ico i{
+    padding-left: 8px;
+}
+.copyright{
+    color: #888888;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    padding-left: 75px;
+}
+.wb_ico:hover,.tx_ico:hover{
+    transition: 0.6s;
+    background-color:#488BC7;
+}
+.dnf_jianjie{
+    color: #E5493B;
+}
+.wb_ico p,.tx_ico p{
+    color: #1E222B;
+    font-size: 25px;
+    padding-top: 10px;
+}
+/*底部版权&联系*/
+a{
+    text-decoration:none;
+}
+a img{border:0;}

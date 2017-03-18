@@ -1,0 +1,556 @@
+*{padding: 0;margin: 0;}
+@font-face {
+    font-family: '思源黑体Light';   /*字体名称*/
+    src: url('../font/SourceHanSansCN-Light.otf');       /*字体源文件*/
+}
+body{
+    position: relative;
+}
+.all{
+    width: 1900px;
+    margin: 0px auto;
+    font-family: "思源黑体Light";
+}
+/*顶部CSS*/
+.top{
+    width: 1900px;
+    height: 84px;
+    background: #1E222B;
+}
+.top ul{
+    width: 100%;
+    list-style:none;
+}
+.top_left{
+    margin-left: 200px;
+    float: left;
+}
+.all_title{
+    width: 50%;
+    margin: 0px 650px;
+}
+.top_title{
+    width: 152px;
+    float: left;
+    height: 84px;
+    color: #FFF;
+    line-height: 84px;
+    font-size: 25px;
+    font-weight: 900;
+}
+.top_title div{
+    height: 82px;
+    width: 125px;
+    text-align: center;
+}
+.top_right{
+    width: 247px;
+    height: 84px;
+    float: right;
+    background: url("../img/DNF_wangzhan.png") no-repeat;
+}
+.top_title:hover{
+    -webkit-transition: 0.3s;
+}
+.top_title div:hover{
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    background-color:#262C40;
+    border-bottom: #E5493B 3px solid;
+}
+/*顶部CSS*/
+
+/*主体部分*/
+.main{
+    width: 1900px;
+}
+/*视频部分*/
+.fugai{
+    width: 1899px;
+    height: 760px;
+    position: absolute;
+    z-index: -2;
+    left: 2px;
+    top: 85px;
+}
+.main_video{
+
+    width: 1900px;
+    height: 760px;
+    position: relative;
+}
+.dianImg{
+    position: absolute;
+    left: 0px;
+    width: 1900px;
+    height: 760px;
+    margin: 0px auto;
+    background: url("../img/dian.png");
+}
+.video-preview {
+    position: absolute;
+    left: 50%;
+    width: 1900px;
+    margin-left: -950px;
+    height: 760px;
+}
+.dianImg,.video-preview{
+    z-index: -1;
+}
+video {
+    object-fit: contain;   /*超出部分剪切*/
+}
+.welcom{
+    width: 728px;
+    height: 430px;
+    position: absolute;
+    left: 586px;
+    top: 200px;
+}
+.all_video{
+    width: 303px;
+    height: 72px;
+    position: absolute;
+    background: url("../img/all_video.png") no-repeat;
+    left: 798.5px;
+    top: 645px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #e9fafe;
+    text-align: center;
+    line-height: 72px;
+}
+.all_video a,.all_video a:visited{
+    color: #e9fafe;
+    text-decoration:none;
+}
+/*主体video*/
+/*视频部分*/
+/*图片轮播*/
+.lunboImg{
+    float: left;
+    position: relative;
+    margin: 50px 60px;
+}
+.lunboImg,.lunboImg ul img,.lunboImg li,.lunboImg ul{
+    width: 815px;
+    height: 540px;
+    border-radius:15px 15px 15px 15px;
+}
+.lunboImg ul{
+    position:relative;
+}
+.lunboImg li {
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    list-style: none;
+    transition: all 1s ease-in-out 0s;
+}
+.pre,.next{
+    position: absolute;
+    width: 42px;
+    height: 50px;
+    background-repeat: no-repeat;
+    z-index:10;
+    opacity: 0.5;       /*设置透明度*/
+    top: 245px;
+}
+.next{
+    right: 0px;
+}
+.lunboImg:hover .pre,.lunboImg:hover .next{
+    transition: 0.6s;
+    opacity: 1;       /*设置透明度*/
+}
+.active{
+    opacity: 1 !important;
+}
+/*图片轮播*/
+/*游戏介绍 文字*/
+.Game_teseAndlunbo{
+    position: relative;
+    width: 1900px;
+    height: 621px;
+    background: url("../img/main_titleBeijing.png") no-repeat;
+}
+.Game_tese{
+    position: relative;
+    height: 540px;
+    width: 900px;
+    font-size: 22px;
+    float: left;
+    margin-top: 50px;
+    box-shadow: 0px 0px 20px #AAA;
+    color: #017F8C;
+    font-family: "宋体",'Ubuntu', sans-serif;
+}
+.Game_teseTitle{
+    position: relative;
+    width: 900px;
+    height: 63px;
+    margin: 0px auto;
+    border-radius: 8px 8px 0px 0px;
+    background-color:#E5493B;
+}
+.Game_teseTitle h1{
+    position: absolute;
+    top: 4px;
+    left: 350px;
+    width: 200px;
+    height: 56px;
+    line-height: 56px;
+    color: #FFF;
+    background: url("../img/kuang1.png") no-repeat ;
+}
+.Game_teseJiesao{
+    width: 900px;
+    height: 480px;
+    margin: 0px auto;
+}
+.text{
+    position: absolute;
+    bottom: 0px;
+    width: 900px;
+    height: 118px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.Game_teseJiesao .text1{
+    font-size: 25px;
+    line-height: 45px;
+}
+.Game_teseJiesao .text2{
+    font-size: 15px;
+    line-height: 20px;
+    color: #919191;
+    text-indent: 2em;
+}
+.Game_teseJiesao .text3{
+    font-size: 18px;
+    line-height: 25px;
+    text-indent: 2em;
+}
+.xiangxi{
+    font-size: 18px;
+    position: absolute;
+    left: 810px;
+    bottom: 6px;
+}
+.xiangxi:visited,.xiangxi:link{
+    color: #017F8C;
+}
+/*游戏介绍 文字*/
+/*人物介绍*/
+.character{
+    width: 1900px;
+    height: 733px;
+    background: url("../img/characterBeijin.png") no-repeat;
+    position: relative;
+}
+.character_kaung{
+    width: 1900px;
+    height: 200px;
+    background: rgba(0,0,0,0.5); /*背景半透*/
+    position: absolute;
+    bottom: 0px;
+}
+.character_kaung ul{
+    position: absolute;
+    list-style: none;
+}
+.character_kaung ul li{
+    border-radius: 12px;
+    width: 68px;
+    height: 58px;
+    float: left;
+    margin-left: 25px;
+}
+.character_avatarArray1{
+    position: absolute;
+    left: 554px;
+    top: 25px;
+}
+.character_avatarArray2{
+    position: absolute;
+    left: 653px;
+    top: 115px;
+}
+.character_img{
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 80px;
+}
+.character_text{
+    width: 900px;
+    height: 670px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 510px;
+    top: 10px;
+}
+.character_text h1{
+    font-family: "微软雅黑";
+    font-size: 65px;
+    font-weight: bold;
+}
+.character_text p{
+    font-size: 18px;
+
+    margin-top: 20px;
+    line-height: 26px;
+    background: rgba(0,0,0,0.3); /*背景半透*/
+    box-shadow: 0px 0px 20px #d0d0d0;
+    border-radius: 5px;
+    padding-left: 8px;
+}
+.character_text h3{
+    margin-top: 30px;
+    color: #E5493B;
+}
+.character_text ul li img{
+    width: auto;
+    height: auto;
+}
+.character_text ul{
+    list-style: none;
+}
+.character_text li{
+    float: left;
+    margin-left: 5px;
+    border-radius:7px;
+    border: #FFFFFF 1px solid;
+}
+.character_text li img{
+    border-radius:7px;
+}
+/*人物介绍*/
+/*壁纸*/
+.wallpaper{
+    position: relative;
+    width: 1900px;
+    height: 713px;
+    background: url("../img/wallpaperBeijing.png") no-repeat;
+}
+.wallpaper h1{
+    position: absolute;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    font-size: 50px;
+    top: 40px;
+    left: 848.047px;
+    color: #FFFFFF;
+}
+.wallpaper ul{
+    position: absolute;
+    list-style: none;
+}
+.wallpaper .wallpaper1 li,.wallpaper .wallpaper2 li{
+    float: left;
+    width: 240px;
+    height: 180px;
+    padding: 5px;
+    margin-left: 8px;
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+}
+.wallpaper ul li img{
+    width: 240px;
+    height: 180px;
+    border-radius: 5px;
+    vertical-align: bottom;
+}
+.wallpaper1{
+    left: 305px;
+    top: 140px;
+}
+.wallpaper2{
+    left: 305px;
+    bottom: 150px;
+}
+.wallpaper ul li:hover{
+    box-shadow: 0 0 2px rgba(0,0,0,1);  /*图片边框*/
+    transform:scale(1.2); /*scale(n)  n代表图片缩放n倍大小  scaleX()横向缩放 scaleY()纵向缩放  为复制时翻转缩放*/
+    -webkit-transform:scale(1.2); /*scale(n)  n代表图片缩放n倍大小  scaleX()横向缩放 scaleY()纵向缩放  为复制时翻转缩放*/
+}
+.gengduoImgBut{
+    position: absolute;
+    display:block;
+    width: 204px;
+    height: 46px;
+    background: url("../img/gengduoImgBut.png") no-repeat;
+    color: #12F9EE;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    padding-left: 54px;
+    line-height: 46px;
+    bottom:50px;
+    left: 821px;
+}
+.gengduoImgBut a:visited,.gengduoImgBut a{
+    color: #12F9EE;
+}
+/*壁纸*/
+/*主体部分*/
+
+/*底部版权&联系*/
+.bottom{
+    width: 100%;
+    height: 192px;
+    border-top: #3C3A3E 12px solid;
+    background: #FFF;
+    font-size: 18px;
+    color: #000;
+    font-family:"微软雅黑";
+}
+.bottom ul{
+    width:450px;
+    height: 100px;
+    margin: 35px auto;
+    list-style: none;
+    position: relative;
+}
+.bottom ul li{
+    float: left;
+    margin-top: 2px;
+}
+.wb_ico{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #E5493B;
+    border-radius: 10px;
+    box-shadow: 10px 3px 20px #CCC;
+}
+.tx_ico{
+    width: 100px;
+    height: 100px;
+    margin-left: 250px;
+    color: #ffffff;
+    background-color: #E5493B;
+    border-radius: 10px;
+    box-shadow: 10px 3px 20px #CCC;
+}
+.tx_ico i{
+    padding-left: 8px;
+}
+.copyright{
+    color: #888888;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    padding-left: 75px;
+}
+.wb_ico:hover,.tx_ico:hover{
+    transition: 0.6s;
+    background-color:#488BC7;
+}
+.dnf_jianjie{
+    color: #E5493B;
+}
+.wb_ico p,.tx_ico p{
+    color: #1E222B;
+    font-size: 25px;
+    padding-top: 10px;
+}
+/*底部版权&联系*/
+
+/*导航栏CSS*/
+.st{
+    position:fixed;
+    left: 95%;
+    border-radius: 0px;
+    top: 650px;
+}
+.st-1,.st-2,.st-3{
+    font-size: 16px;
+    font-family: 思源黑体Light;
+    width: 72px;
+    height: 73px;
+    margin-top: 2px;
+    border-radius: 3px;
+}
+.st-1{
+    position:relative;
+    background: #6da9de;
+}
+.st-1 i,.st-2 i,.st-3 i{
+    color: #FFF;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.st-2 i{
+    left: 17.71px;
+}
+.st-3 i{
+    left: 12px;
+}
+.st-1 p,.st-2 p{
+    color: #FFF;
+    position: absolute;
+    bottom: 5px;
+    left: 8.385px;
+}
+.st-2 p{
+    left: 4px;
+}
+.st-2{
+    position:relative;
+    background: #78c340;
+}
+.st-3{
+    position: relative;
+    background: #666666;
+}
+.st-1:hover{
+    background: #488BC7;
+}
+.st-2:hover{
+    background: #58A81C;
+}
+.st-3:hover{
+    border-radius: 0px 3px 3px 0px;
+}
+.st-1:hover div{
+    width: 160px;
+    height: 160px;
+    top: 0px;
+    left: -160px;
+    position: absolute;
+    margin-top: 2px;
+    background: url("../img/qq_ma.png") no-repeat;
+}
+.st-2:hover div{
+    width: 160px;
+    height: 160px;
+    top: 0px;
+    left: -160px;
+    position: absolute;
+    background: url("../img/wx_ma.jpg") no-repeat;
+}
+.st-3:hover div{
+    transition: 0.6s;
+    height: 73px;
+    width: 100px;
+    background: #666666;
+    border-radius: 3px 0px 0px 3px;
+    position: absolute;
+    left:-99px;
+
+}
+.st-3:hover div:after{
+    display: block;
+    content: "回到顶部";
+    font-size: 22px;
+    color: #FFF;
+    padding:25px 0 0 10px;
+}
+/*导航栏CSS*/
+a{
+    text-decoration:none;
+}
+a img{border:0;}
